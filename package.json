@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ivanoviczeljko.github.io/portfolio",
- "scripts": {
+"scripts": {
   "dev": "next dev",
   "build": "next build",
   "deploy": "gh-pages -d out --dotfiles",
-  "pro-gh": "git add . &&  git commit -m 'Minor changes' && git push origin main",
-  "one-line" : "npm run build && npm run deploy && npm run pro-gh"
+  "pro-gh": "git add . && git commit -m \"$npm_config_message\" || git commit -m 'Minor changes' && git push origin main",
+  "one-line": "npm run build && npm run deploy && npm run pro-gh"
 },
   "dependencies": {
     "@react-three/drei": "^9.105.4",

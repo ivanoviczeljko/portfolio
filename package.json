@@ -8,7 +8,9 @@
   "build": "next build",  
   "start": "next start",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d out"  
+  "deploy": "gh-pages -d out",
+  "export": "next export",
+  "postexport": "touch out/.nojekyll && cp out/index.html out/404.html"
 },
   "dependencies": {
     "@react-three/drei": "^9.105.4",

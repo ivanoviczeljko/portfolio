@@ -1,3 +1,4 @@
+const isProd = process.env.NODE_ENV === 'production';
 module.exports = {
   output: 'export',  // Required for static export
   basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',

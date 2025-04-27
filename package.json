@@ -5,12 +5,9 @@
   "homepage": "https://ivanoviczeljko.github.io/portfolio",
  "scripts": {
   "dev": "next dev",
-  "build": "GH_PAGES=true next build",  
-  "start": "next start",
-  "predeploy": "rm -rf out && npm run build",
-  "deploy": "gh-pages -d out -t true",
-  "export": "next export",
-  "postbuild": "cp -R .next/static out/_next/static && touch out/.nojekyll"
+  "build": "next build",
+  "deploy": "gh-pages -d out --dotfiles",
+  "pro-gh": "git add . &&  git commit -m 'Minor changes' && git push origin main "
 },
   "dependencies": {
     "@react-three/drei": "^9.105.4",

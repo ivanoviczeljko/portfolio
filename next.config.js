@@ -1,19 +1,12 @@
-const isGithubActions = process.env.GITHUB_ACTIONS || false
-
-let assetPrefix = ''
-let basePath = ''
-
-if (isGithubActions) {
-  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-  assetPrefix = `/${repo}/`
-  basePath = `/${repo}`
-}
-
-module.exports = {
-  output: 'export', // Required for static export
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // static export needed for gh-pages
+  assetPrefix: '/portfolio/',
+  basePath: '/portfolio',
+  trailingSlash: true, // optional but good
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true, // because images optimization requires server
   },
 }
+
+module.exports = nextConfig

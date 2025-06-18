@@ -85,6 +85,14 @@ export const projects = [
     img: "./p2.png",
     iconLists: ["./wp.svg", "./js.svg", "./css.svg", "./html.svg", "./svn.png"],
     link: "https://wordpress.org/plugins/easy-recaptcha-shortcodes/",
+  },
+  {
+    id: 3,
+    title: "OpenAPI, Swagger and Python",
+    des: "A REST API project built with Python using the OpenAPI specification and Swagger UI for interactive documentation, ideal for showcasing clean and well-documented backend development skills.",
+    img: "./p3.png",
+    iconLists: ["./python.svg", "./swagger.svg", "./flask.svg", "./openapi.svg"],
+    link: "#",
   }
 ];
 

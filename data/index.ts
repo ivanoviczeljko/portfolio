@@ -92,7 +92,7 @@ export const projects = [
     des: "A REST API project built with Python using the OpenAPI specification and Swagger UI for interactive documentation, ideal for showcasing clean and well-documented backend development skills.",
     img: "./p3.png",
     iconLists: ["./python.svg", "./swagger.svg", "./flask.svg", "./openapi.svg"],
-    link: "#",
+    link: "Work in progress",
   }
 ];
 

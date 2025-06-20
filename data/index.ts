@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "OpenAPI, Swagger and Python",
+    title: "OpenAPI, Swagger and Python (work in progress)",
     des: "A REST API project built with Python using the OpenAPI specification and Swagger UI for interactive documentation, ideal for showcasing clean and well-documented backend development skills.",
     img: "./p3.png",
     iconLists: ["./python.svg", "./swagger.svg", "./flask.svg", "./openapi.svg"],
